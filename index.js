@@ -150,10 +150,10 @@ closeModal.addEventListener('click', function(){
 
 historyButton.addEventListener('click', function(){
     mainContainer.classList.add('hidden')
-    historyButton.classList.remove('border', 'bg-transparent','border-inputBorder')
+    historyButton.classList.remove('border', 'bg-gray-300','border-inputBorder')
     historyButton.classList.add('bg-btn-bg')
     donationButton.classList.remove('bg-btn-bg')
-    donationButton.classList.add('border', 'bg-transparent','border-inputBorder')
+    donationButton.classList.add('border', 'bg-gray-300','border-inputBorder')
 
     donationHistory.classList.remove('hidden')
 
@@ -163,10 +163,10 @@ historyButton.addEventListener('click', function(){
 
 donationButton.addEventListener('click', function(){
     mainContainer.classList.remove('hidden')
-    historyButton.classList.add('border', 'bg-transparent','border-inputBorder')
+    historyButton.classList.add('border', 'bg-gray-300','border-inputBorder')
     historyButton.classList.remove('bg-btn-bg')
     donationButton.classList.add('bg-btn-bg')
-    donationButton.classList.remove('border', 'bg-transparent','border-inputBorder')
+    donationButton.classList.remove('border', 'bg-gray-300','border-inputBorder')
 
     donationHistory.classList.add('hidden')
 
@@ -179,11 +179,25 @@ blogButton.addEventListener('click', function(){
 })
 
 // navbar scroll function 
-
+let header = getElement('header')
 let navbar = getElement('navbar');
-console.log(navbar)
-navbar.addEventListener('scroll', function(){
-    navbar.classList.remove('bg-navBg')
-    navbar.classList.add('bg-black')
+
+window.addEventListener('scroll', function(){
+
+    if(window.pageYOffset > 50 ){
+        header.classList.add('backdrop-blur');
+        navbar.classList.add('backdrop-blur');
+        navbar.classList.remove('bg-navBg') 
+
+    }else{
+        navbar.classList.add('bg-navBg');
+        header.classList.remove('backdrop-blur')
+
+        
+
+    }
+
+        
+    
 
 })

@@ -28,9 +28,9 @@
 
 </head>
 <body>
-  <header class="sticky left-0 top-0 pb-7 backdrop-blur">
-    <nav class="w-full bg-navBg">
-      <div class="lg:w-5/6 w-full mx-auto lg:p-6 p-2 ">
+  
+    <nav class="w-full bg-navBg sticky left-0 top-0">
+      <div class="lg:w-5/6 w-full mx-auto lg:p-4 p-2 ">
         <ul class="flex justify-between">
           <li><button onclick="redirect()" id="home-button" class="btn bg-btn-bg font-bold w-24">Home</button></li>
           <li class="flex items-center lg:ml-5">
@@ -46,9 +46,9 @@
       </div>
     </nav>
    
-  </header>
+
   <!-- FAQ Section -->
-  <section class="space-y-4 w-5/6 mx-auto mt-10">
+  <section class=" lg:w-5/6 w-full px-3 mx-auto mt-16">
     <div class="flex">
         <h1 class="text-5xl font-black mb-6">Important FAQ</h1>
         <img class="h-10 ml-1" src="./assets/faq.png" alt="">
@@ -60,25 +60,36 @@
           <p>DOM is a programming interface provided by web browsers that represents the structure and content of HTML or XML documents as a tree of objects.</p>
         </div>
       </div>
-      <div class="collapse collapse-arrow bg-base-200">
+      <div class="collapse collapse-arrow border">
         <input type="radio" name="my-accordion-2" />
         <div class="collapse-title text-xl font-medium">How do you select an element from DOM</div>
         <div class="collapse-content">
           <p>To select an element from a DOM, we can use DOM selectors. For example: getElementById(), getElementsByClassName(), getElementsByTagName(), querySelector(), querySelectorAll()</p>
         </div>
       </div>
-      <div class="collapse collapse-arrow bg-base-200">
+      <div class="collapse collapse-arrow border">
         <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM and why is it useful</div>
         <div class="collapse-content">
-          <p>hello</p>
+          <p>Event delegation is a technique in JavaScript and the DOM where a single event listener is added to a parent element rather than multiple event listeners to child elements.elloh</p>
         </div>
       </div>
-      <div class="collapse collapse-arrow bg-base-200">
+      <div class="collapse collapse-arrow border">
         <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM</div>
         <div class="collapse-content">
-          <p>hello</p>
+          <p>There are various methods to manipulate an element’s attributes and styles using the DOM in JavaScript.
+            Manipulating Attributes:
+            getAttribute('attr') – Get an attribute's value.
+            setAttribute('attr', value) – Set an attribute's value.
+            removeAttribute('attr') – Remove an attribute.
+            element.dataset – Access custom data attributes.
+            
+            Manipulating Styles:
+            element.style.property – Access or modify a specific inline CSS style.
+            classList.add() – Add a class to an element.
+            classList.remove() – Remove a class from an element.
+            classList.toggle() – Toggle a class on or off.</p>
         </div>
       </div>
   </section>
@@ -87,6 +98,7 @@
     function redirect(){
       window.location.href = "./index.html"
     }
+
    </script>
 </body>
 </html>
