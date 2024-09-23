@@ -156,6 +156,7 @@ historyButton.addEventListener('click', function(){
     donationButton.classList.add('border', 'bg-gray-300','border-inputBorder')
 
     donationHistory.classList.remove('hidden')
+    getElement('footer').classList.add('hidden')
 
 })
 
@@ -169,7 +170,7 @@ donationButton.addEventListener('click', function(){
     donationButton.classList.remove('border', 'bg-gray-300','border-inputBorder')
 
     donationHistory.classList.add('hidden')
-
+    getElement('footer').classList.remove('hidden')
 })
 
 // blog button functionality
