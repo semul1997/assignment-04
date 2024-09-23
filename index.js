@@ -26,8 +26,8 @@ donateNoakhali.addEventListener('click', function(){
     let donationHistory = getElement('donation-history')
     
  
-    let inputNoakhali = parseFloat(getElement('input-noakhali').value);
-    if(inputNoakhali < 0 || isNaN(inputNoakhali)){
+    let inputNoakhali = Number(getElement('input-noakhali').value);
+    if(inputNoakhali <= 0 || isNaN(inputNoakhali)){
         getElement('input-noakhali').value = "";
         return alert('please enter valid amount')
     }
@@ -67,8 +67,8 @@ donateFeni.addEventListener('click', function(){
     let donationHistory = getElement('donation-history')
     
  
-    let inputFeni = parseFloat(getElement('input-feni').value);
-    if(inputFeni< 0 || isNaN(inputFeni)){
+    let inputFeni = Number(getElement('input-feni').value);
+    if(inputFeni<= 0 || isNaN(inputFeni)){
         getElement('input-feni').value = "";
        return alert('please enter valid amount')
     }
@@ -109,8 +109,8 @@ donateQuota.addEventListener('click', function(){
     let donationHistory = getElement('donation-history')
     
  
-    let inputquota = parseFloat(getElement('input-quota').value);
-    if(inputquota < 0 || isNaN(inputquota)){
+    let inputquota = Number(getElement('input-quota').value);
+    if(inputquota <= 0 || isNaN(inputquota)){
         getElement('input-quota').value = "";
        return alert('please enter valid amount')
     }
