@@ -14,6 +14,9 @@ let blogButton = getElement('blog-button');
 let donationButton = getElement('donation');
 let historyButton = getElement('history');
 let donateQuota = getElement('donate-quota');
+let mainContainer = getElement('main-container')
+let donationHistory = getElement('donation-history')
+
 
 
 donateNoakhali.addEventListener('click', function(){
@@ -52,4 +55,27 @@ let closeModal = getElement('modal-close');
 closeModal.addEventListener('click', function(){
     
     modal.classList.add('hidden')
+})
+
+
+historyButton.addEventListener('click', function(){
+    mainContainer.classList.add('hidden')
+    historyButton.classList.remove('border', 'bg-transparent','border-inputBorder')
+    historyButton.classList.add('bg-btn-bg')
+    donationButton.classList.remove('bg-btn-bg')
+    donationButton.classList.add('border', 'bg-transparent','border-inputBorder')
+
+    donationHistory.classList.remove('hidden')
+
+})
+
+donationButton.addEventListener('click', function(){
+    mainContainer.classList.remove('hidden')
+    historyButton.classList.add('border', 'bg-transparent','border-inputBorder')
+    historyButton.classList.remove('bg-btn-bg')
+    donationButton.classList.add('bg-btn-bg')
+    donationButton.classList.remove('border', 'bg-transparent','border-inputBorder')
+
+    donationHistory.classList.add('hidden')
+
 })
