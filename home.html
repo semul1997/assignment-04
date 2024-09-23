@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" data-theme = "light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+<!-- daisy ui cdn link -->
+ 
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- tailwind config -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'navBg' : 'rgb(249, 247, 243)',
+            'inputBorder' : 'rgba(17, 17, 17, 0.1)',
+            'btn-bg' : 'rgb(180, 244, 97)',
+            'modalBg' : 'rgba(0, 0, 0, 0.3)',
+          }
+        }
+      }
+    }
+  </script>
+
+</head>
+<body>
+  <header class="sticky left-0 top-0 pb-7 backdrop-blur">
+    <nav class="w-full bg-navBg">
+      <div class="lg:w-5/6 w-full mx-auto lg:p-6 p-2 ">
+        <ul class="flex justify-between">
+          <li><button onclick="redirect()" id="home-button" class="btn bg-btn-bg font-bold w-24">Home</button></li>
+          <li class="flex items-center lg:ml-5">
+            <img class="lg:block hidden lg:w-10 " src="./assets/logo.png" alt="">
+            <p class="text-lg font-bold lg:text-left lg:ml-5 text-center lg:w-60 w-40 ">Donate Bangladesh</p>
+          </li>
+          <li class="flex items-center lg:border-none border border-inputBorder px-1  h-12 justify-center rounded-md">
+            <img class="lg:block hidden" src="./assets/coin.png" alt="">
+            <p class="font-semibold text-gray-500 flex">
+            <span id="remaining-balance" class="ml-1 mr-1">95000</span> BDT</p>
+          </li>
+        </ul>
+      </div>
+    </nav>
+   
+  </header>
+  <!-- FAQ Section -->
+  <section class="space-y-4 w-5/6 mx-auto mt-10">
+    <div class="flex">
+        <h1 class="text-5xl font-black mb-6">Important FAQ</h1>
+        <img class="h-10 ml-1" src="./assets/faq.png" alt="">
+    </div>
+    <div class="collapse collapse-arrow border mt-6">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM) ?</div>
+        <div class="collapse-content">
+          <p>DOM is a programming interface provided by web browsers that represents the structure and content of HTML or XML documents as a tree of objects.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">How do you select an element from DOM</div>
+        <div class="collapse-content">
+          <p>To select an element from a DOM, we can use DOM selectors. For example: getElementById(), getElementsByClassName(), getElementsByTagName(), querySelector(), querySelectorAll()</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      </div>
+  </section>
+
+   <script>
+    function redirect(){
+      window.location.href = "./index.html"
+    }
+   </script>
+</body>
+</html>

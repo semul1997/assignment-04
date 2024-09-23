@@ -29,7 +29,7 @@
 </head>
 <body>
   <header class="sticky left-0 top-0 pb-7 backdrop-blur">
-    <nav class="w-full bg-navBg ">
+    <nav id="navbar" class="w-full bg-navBg">
       <div class="lg:w-5/6 w-full mx-auto lg:p-6 p-2 ">
         <ul class="flex justify-between">
           <li><button id="blog-button" class="btn bg-btn-bg font-bold w-24">Blog</button></li>
@@ -40,7 +40,7 @@
           <li class="flex items-center lg:border-none border border-inputBorder px-1  h-12 justify-center rounded-md">
             <img class="lg:block hidden" src="./assets/coin.png" alt="">
             <p class="font-semibold text-gray-500 flex">
-            <span id="remaining-balance" class="ml-1 mr-1">9500</span> BDT</p>
+            <span id="remaining-balance" class="ml-1 mr-1">95000</span> BDT</p>
           </li>
         </ul>
       </div>
@@ -84,7 +84,7 @@
         </button>
         <h1 class="text-xl font-semibold mb-3">Donate for Flood Relief in Feni,Bangladesh</h1>
         <p class="mb-9 leading-relaxed"> The recent floods in Feni have caused significant damage to homes  infrastructure, leaving thousands of families displaced, without food, clean water, and essential supplies.Homes have been destroyed, livelihoods lost, and communities are in urgent need of assistance.Your generous donation will go directly toward providing emergency relief, including food, clean water, medical aid, shelter, and rehabilitation support for the flood victims. Every contribution, no matter how small, can make a significant impact in restoring hope and helping families rebuild their lives.</p>
-        <input class="w-full border p-3 rounded-md mb-4" type="text" placeholder="Write Donation Amount">
+        <input id="input-feni" class="w-full border p-3 rounded-md mb-4" type="text" placeholder="Write Donation Amount">
         <button id="donate-feni" class="btn bg-btn-bg w-full ">Donate</button>
       </div>
         </div>
@@ -102,7 +102,7 @@
         </button>
         <h1 class="text-xl font-semibold mb-3">Aid for Injured in the Quota Movement</h1>
         <p class="mb-9 leading-relaxed"> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
-        <input class="w-full border p-3 rounded-md mb-4" type="text" placeholder="Write Donation Amount">
+        <input id="input-quota" class="w-full border p-3 rounded-md mb-4" type="text" placeholder="Write Donation Amount">
         <button id="donate-quota" class="btn bg-btn-bg w-full ">Donate</button>
       </div>
         </div>
@@ -120,7 +120,7 @@
 
   </main>
   
-  <section id="donation-history" class="w-5/6 mx-auto hidden">
+  <section id="donation-history" class="lg:w-5/6 w-full px-3 mx-auto hidden">
     
   </section>
    <script src="./index.js"></script> 
