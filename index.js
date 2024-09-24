@@ -43,7 +43,7 @@ donateNoakhali.addEventListener('click', function(){
     
     newDiv.innerHTML =  `
                         <p  class = "font-bold"> ${inputNoakhali} Taka is Donated For flood relief in 2024 at  Noakhali, Bangladesh </p> 
-                        <p> ${new Date()} </p>
+                        <p>Date: ${new Date()} </p>
                         `;
     donationHistory.insertBefore(newDiv, donationHistory.firstChild)
 
@@ -84,7 +84,7 @@ donateFeni.addEventListener('click', function(){
     
     newDiv.innerHTML =  `
                         <p  class = "font-bold"> ${inputFeni} Taka is Donated For flood relief in 2024 at  Feni, Bangladesh </p> 
-                        <p> ${new Date()} </p>
+                        <p> Date: ${new Date()} </p>
                         `;
     donationHistory.insertBefore(newDiv, donationHistory.firstChild)
 
@@ -126,7 +126,7 @@ donateQuota.addEventListener('click', function(){
     
     newDiv.innerHTML =  `
                         <p  class = "font-bold"> ${inputquota} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh </p> 
-                        <p> ${new Date()} </p>
+                        <p> Date: ${new Date()} </p>
                         `;
     donationHistory.insertBefore(newDiv, donationHistory.firstChild)
 
