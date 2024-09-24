@@ -156,7 +156,7 @@ historyButton.addEventListener('click', function(){
     donationButton.classList.add('border', 'bg-gray-300','border-inputBorder')
 
     donationHistory.classList.remove('hidden')
-    getElement('footer').classList.add('hidden')
+    //getElement('footer').classList.add('hidden')
 
 })
 
