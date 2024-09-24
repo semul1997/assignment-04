@@ -1,8 +1,11 @@
+// common function
+
 function getElement(id){
     let element = document.getElementById(id);
 return element;
 }
 
+// selected all required element
 
 let reminingBalance = parseFloat(getElement('remaining-balance').innerText);
 let noakhaliDonation = parseFloat(getElement('noakhali-donation').innerText)
@@ -32,6 +35,10 @@ donateNoakhali.addEventListener('click', function(){
         return alert('please enter valid amount')
     }
     
+    if(inputNoakhali > reminingBalance){
+        return alert ("insufficient Balance")
+    }
+
     let newAmount = inputNoakhali + noakhaliDonation;
     getElement('noakhali-donation').innerText = newAmount;
 
@@ -71,6 +78,10 @@ donateFeni.addEventListener('click', function(){
     if(inputFeni<= 0 || isNaN(inputFeni)){
         getElement('input-feni').value = "";
        return alert('please enter valid amount')
+    }
+
+    if(inputFeni > reminingBalance){
+        return alert ("insufficient Balance")
     }
     
     let newAmount = inputFeni + feniDonation;
@@ -115,6 +126,10 @@ donateQuota.addEventListener('click', function(){
        return alert('please enter valid amount')
     }
     
+
+    if(inputquota > reminingBalance){
+        return alert ("insufficient Balance")
+    }
     let newAmount = inputquota + quotaDonation;
     getElement('quota-donation').innerText = newAmount;
 
